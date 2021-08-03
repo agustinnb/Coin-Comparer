@@ -10,7 +10,7 @@ In your .env file define variable <code>CMC_API_KEY</code> with your CoinMarketC
 
 Run the following commands inside folder:
 
-<code>php artisan migrate --seed</code> // This will generate the coin list / User Factory with mock data
+<code>php artisan migrate --seed</code> // This will generate the coin list / User Factory with mock data <br/>
 <code>php artisan make:link</code> // This will generate symlinks between public and Storage folder
 
 Think that's all.
