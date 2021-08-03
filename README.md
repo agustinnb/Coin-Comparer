@@ -17,3 +17,4 @@ Think that's all.
 
 TODO:
 * Add User authentication and Views
+* Support for mobile phones
