@@ -1,3 +1,5 @@
+<h1>Coin Comparer</h1>
+
 Coin comparer designed in Laravel 8.
 
 You can see a working copy <a href="http://www.agustinbottos.com.ar/laravel/">here</a>.
