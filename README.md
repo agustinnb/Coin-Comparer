@@ -4,7 +4,7 @@ Coin comparer designed in Laravel 8.
 
 You can see a working copy <a href="http://www.agustinbottos.com.ar/laravel/">here</a>.
 
-To make it work you need to have Laravel 8 / Laradock installed.
+To make it work you need to have Laravel 8 installed.
 
 In your .env file define variable <code>CMC_API_KEY</code> with your CoinMarketCap API key.
 
