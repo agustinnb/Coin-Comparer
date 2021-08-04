@@ -1,5 +1,5 @@
 @extends('layouts.plantilla')
-@section('title','Coin Monitor')
+@section('title','Coin Comparer')
 @section('content')
 <style>
     .ui-autocomplete-loading {
