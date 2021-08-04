@@ -47,7 +47,12 @@
     
         
     <div class="footer">
-        <p class="footer-container">Copyright: Frixion - Agustinnb (2021) - All rights reserved </p>
+        <p class="footer-container">
+        <span class="footer-container-span">Copyright: Frixion - Agustinnb (2021) - All rights reserved</span>
+        @if(session()->has('email'))
+        <span  class="logout-container text-light"><a href="{{ route('user.logout') }}">Logout</a></span>
+        @endif
+        </p>
     </div>
     </body>
 </html>

@@ -17,10 +17,13 @@ use App\Http\Controllers\CoinShowController;
 |
 */
 
-Route::get('/', IndexController::class);
+Route::get('/coinmonitor', IndexController::class);
 
-Route::get('/user/create', [UserController::class, "create"]);
-Route::get('/user/login', [UserController::class, "login"]);
-Route::get('/user/delete', [UserController::class, "delete"]);
+Route::get('/user/create', [UserController::class, "create"])->name('user.create');
+Route::get('/', [UserController::class, "login"]);
+
 Route::get('search/coins', [CoinSearchController::class, 'coins'])->name('search.coins');
 Route::get('show/coins', [CoinShowController::class, 'showcoin'])->name('show.coins');
+Route::post('logincheck',[UserController::class, "logincheck"])->name('user.logincheck');
+Route::post('register',[UserController::class, "register"])->name('user.register');
+Route::get('logout', [UserController::class, 'logout'])->name('user.logout');
