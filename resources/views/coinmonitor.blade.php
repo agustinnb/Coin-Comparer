@@ -190,45 +190,45 @@ function hideLoading() {
                     }
                     var price="";
                     if (parseFloat(gdata1.price) > parseFloat(gdata2.price)){
-                        price=gdata1.name + " has " + (parseFloat(gdata1.price)-parseFloat(gdata2.price)) + " more value per coin than " + gdata2.name;
+                        price=gdata1.name + " has " + parseFloat((parseFloat(gdata1.price)-parseFloat(gdata2.price))).toFixed(4) + " more value per coin than " + gdata2.name;
                     }else{
-                        price=gdata2.name + " has " +  + (parseFloat(gdata2.price)-parseFloat(gdata1.price)) + " more value per coin than " + gdata1.name;
+                        price=gdata2.name + " has " +  + parseFloat((parseFloat(gdata2.price)-parseFloat(gdata1.price))).toFixed(4) + " more value per coin than " + gdata1.name;
                     }
                     var volume_24h="";
                     if (parseFloat(gdata1.volume_24h) > parseFloat(gdata2.volume_24h)){
-                        volume_24h=gdata1.name + " has " + (parseFloat(gdata1.volume_24h)-parseFloat(gdata2.volume_24h)) + " more volume in the last 24h than " + gdata2.name;
+                        volume_24h=gdata1.name + " has " + parseFloat((parseFloat(gdata1.volume_24h)-parseFloat(gdata2.volume_24h))).toFixed(4) + " more volume in the last 24h than " + gdata2.name;
                     }else{
-                        volume_24h=gdata2.name + " has " +  + (parseFloat(gdata2.volume_24h)-parseFloat(gdata1.volume_24h)) + " more volume in the last 24h than " + gdata1.name;
+                        volume_24h=gdata2.name + " has " +  + parseFloat((parseFloat(gdata2.volume_24h)-parseFloat(gdata1.volume_24h))).toFixed(4) + " more volume in the last 24h than " + gdata1.name;
                     }
                     var percent_change_1h="";
                     if (parseFloat(gdata1.percent_change_1h) > parseFloat(gdata2.percent_change_1h)){
-                        percent_change_1h=gdata1.name + " has a positive difference of " + Math.abs(parseFloat(gdata1.percent_change_1h)-parseFloat(gdata2.percent_change_1h)) + "% percent change in the last hour than " + gdata2.name;
+                        percent_change_1h=gdata1.name + " has a positive difference of " + parseFloat(Math.abs(parseFloat(gdata1.percent_change_1h)-parseFloat(gdata2.percent_change_1h))).toFixed(4) + "% percent change in the last hour than " + gdata2.name;
                     }else{
-                        percent_change_1h=gdata2.name + " has a positive difference of " + Math.abs(parseFloat(gdata1.percent_change_1h)-parseFloat(gdata2.percent_change_1h)) + "% percent change in the last hour than " + gdata1.name;
+                        percent_change_1h=gdata2.name + " has a positive difference of " + parseFloat(Math.abs(parseFloat(gdata1.percent_change_1h)-parseFloat(gdata2.percent_change_1h))).toFixed(4) + "% percent change in the last hour than " + gdata1.name;
                     }
                     var percent_change_24h="";
                     if (parseFloat(gdata1.percent_change_24h) > parseFloat(gdata2.percent_change_24h)){
-                        percent_change_24h=gdata1.name + " has a positive difference of " + Math.abs(parseFloat(gdata1.percent_change_24h)-parseFloat(gdata2.percent_change_24h)) + "% percent change in the last 24h than " + gdata2.name;
+                        percent_change_24h=gdata1.name + " has a positive difference of " + parseFloat(Math.abs(parseFloat(gdata1.percent_change_24h)-parseFloat(gdata2.percent_change_24h))).toFixed(4) + "% percent change in the last 24h than " + gdata2.name;
                     }else{
-                        percent_change_24h=gdata2.name + " has a positive difference of " + Math.abs(parseFloat(gdata1.percent_change_24h)-parseFloat(gdata2.percent_change_24h)) + "% percent change in the last 24h than " + gdata1.name;
+                        percent_change_24h=gdata2.name + " has a positive difference of " + parseFloat(Math.abs(parseFloat(gdata1.percent_change_24h)-parseFloat(gdata2.percent_change_24h))).toFixed(4) + "% percent change in the last 24h than " + gdata1.name;
                     }
                     var percent_change_7d="";
                     if (parseFloat(gdata1.percent_change_7d) > parseFloat(gdata2.percent_change_7d)){
-                        percent_change_7d=gdata1.name + " has a positive difference of " + Math.abs(parseFloat(gdata1.percent_change_7d)-parseFloat(gdata2.percent_change_7d)) + "% percent change in the last 7d than " + gdata2.name;
+                        percent_change_7d=gdata1.name + " has a positive difference of " + parseFloat(Math.abs(parseFloat(gdata1.percent_change_7d)-parseFloat(gdata2.percent_change_7d))).toFixed(4) + "% percent change in the last 7d than " + gdata2.name;
                     }else{
-                        percent_change_7d=gdata2.name + " has a positive difference of " + Math.abs(parseFloat(gdata1.percent_change_7d)-parseFloat(gdata2.percent_change_7d)) + "% percent change in the last 7d than " + gdata1.name;
+                        percent_change_7d=gdata2.name + " has a positive difference of " + parseFloat(Math.abs(parseFloat(gdata1.percent_change_7d)-parseFloat(gdata2.percent_change_7d))).toFixed(4) + "% percent change in the last 7d than " + gdata1.name;
                     }
                     var percent_change_30d="";
                     if (parseFloat(gdata1.percent_change_30d) > parseFloat(gdata2.percent_change_30d)){
-                        percent_change_30d=gdata1.name + " has a positive difference of " + Math.abs(parseFloat(gdata1.percent_change_30d)-parseFloat(gdata2.percent_change_30d)) + "% percent change in the last 30d than " + gdata2.name;
+                        percent_change_30d=gdata1.name + " has a positive difference of " + parseFloat(Math.abs(parseFloat(gdata1.percent_change_30d)-parseFloat(gdata2.percent_change_30d))).toFixed(4) + "% percent change in the last 30d than " + gdata2.name;
                     }else{
-                        percent_change_30d=gdata2.name + " has a positive difference of " + Math.abs(parseFloat(gdata1.percent_change_30d)-parseFloat(gdata2.percent_change_30d)) + "% percent change in the last 30d than " + gdata1.name;
+                        percent_change_30d=gdata2.name + " has a positive difference of " + parseFloat(Math.abs(parseFloat(gdata1.percent_change_30d)-parseFloat(gdata2.percent_change_30d))).toFixed(4) + "% percent change in the last 30d than " + gdata1.name;
                     }
                     var market_cap="";
                     if (parseFloat(gdata1.market_cap) > parseFloat(gdata2.market_cap)){
-                        market_cap=gdata1.name + " has " + (parseFloat(gdata1.market_cap)-parseFloat(gdata2.market_cap)) + " more Market Cap than " + gdata2.name;
+                        market_cap=gdata1.name + " has " + parseFloat((parseFloat(gdata1.market_cap)-parseFloat(gdata2.market_cap))).toFixed(0) + " more Market Cap than " + gdata2.name;
                     }else{
-                        market_cap=gdata2.name + " has " +  + (parseFloat(gdata2.market_cap)-parseFloat(gdata1.market_cap)) + " more Market Cap than " + gdata1.name;
+                        market_cap=gdata2.name + " has " +  + parseFloat((parseFloat(gdata2.market_cap)-parseFloat(gdata1.market_cap))).toFixed(0) + " more Market Cap than " + gdata1.name;
                     }
 
 
@@ -236,28 +236,28 @@ function hideLoading() {
 
 
                     var text_coincompare="<div class='container rounded'>" +
-                        "<div class='row rounded' style='background-color: #6a6a6b41; !important'><div class='col'>" + gdata1.name + "</div><div class='col'>Comparison</div><div class='col'>" + gdata2.name + "</div></div>" + 
+                        "<div class='row rounded' style='font-size:22px; background-color: #6a6a6b41; !important'><div class='col'>" + gdata1.name + "</div><div class='col'>Comparison</div><div class='col'>" + gdata2.name + "</div></div>" + 
                         "<div class='row' style='font-size:20px;'><div class='col'>" + gdata1.symbol + "</div><div class='col'></div><div class='col'>" + gdata2.symbol + "</div></div>";
                         if ((parseFloat(gdata1.circulating_supply)!=0)&&(parseFloat(gdata2.circulating_supply)!=0)){
-                        text_coincompare+="<div class='row' style='font-size:15px;'><div class='col'>Circulating Supply: " + gdata1.circulating_supply + "</div><div class='col' style='font-size:10px;'>" + compCC + "</div><div class='col'>Circulating Supply: " + gdata2.circulating_supply + "</div></div>";    
+                        text_coincompare+="<div class='row' style='font-size:12px;'><div class='col'>Circulating Supply: " + parseFloat(gdata1.circulating_supply).toFixed(2) + "</div><div class='col' style='font-size:10px;'>" + compCC + "</div><div class='col'>Circulating Supply: " + parseFloat(gdata2.circulating_supply).toFixed(2) + "</div></div>";    
                         }
                         if ((parseFloat(gdata1.total_supply)!=0)&&(parseFloat(gdata2.total_supply)!=0)){
-                        text_coincompare+="<div class='row' style='font-size:15px;'><div class='col'>Total Supply: " + gdata1.total_supply + "</div><div class='col' style='font-size:10px;'>" + compTS + "</div><div class='col'>Total Supply: " + gdata2.total_supply + "</div></div>";
+                        text_coincompare+="<div class='row' style='font-size:12px;'><div class='col'>Total Supply: " + parseFloat(gdata1.total_supply).toFixed(2) + "</div><div class='col' style='font-size:10px;'>" + compTS + "</div><div class='col'>Total Supply: " + parseFloat(gdata2.total_supply).toFixed(2) + "</div></div>";
                         }
                         if ((parseFloat(gdata1.price)!=0)&&(parseFloat(gdata2.price)!=0)){
-                        text_coincompare+="<div class='row' style='font-size:15px;'><div class='col'>Price: " + gdata1.price + " USD</div><div class='col' style='font-size:10px;'>" + price + "</div><div class='col'>Price: " + gdata2.price + "</div></div>";
+                        text_coincompare+="<div class='row' style='font-size:12px;'><div class='col'>Price: " + parseFloat(gdata1.price).toFixed(2) + " USD</div><div class='col' style='font-size:10px;'>" + price + "</div><div class='col'>Price: " + parseFloat(gdata2.price).toFixed(2) + " USD</div></div>";
                         }
                         if ((parseFloat(gdata1.volume_24h)!=0)&&(parseFloat(gdata2.volume_24h)!=0)){
-                        text_coincompare+="<div class='row' style='font-size:15px;'><div class='col'>Coin Volume 24h: " + gdata1.volume_24h + "</div><div class='col' style='font-size:10px;'>" + volume_24h + "</div><div class='col'>Coin Volume 24h: " + gdata2.volume_24h + "</div></div>";
+                        text_coincompare+="<div class='row' style='font-size:12px;'><div class='col'>Coin Volume 24h: " + parseFloat(gdata1.volume_24h).toFixed(2) + "</div><div class='col' style='font-size:10px;'>" + volume_24h + "</div><div class='col'>Coin Volume 24h: " + parseFloat(gdata2.volume_24h).toFixed(2) + "</div></div>";
                         }
-                        text_coincompare+="<div class='row' style='font-size:15px;'><div class='col'>Percent Change 1h: " + gdata1.percent_change_1h + " </div><div class='col' style='font-size:10px;'>" + percent_change_1h + "</div><div class='col'>Percent Change 1h: " + gdata2.percent_change_1h + "</div></div>" +
-                        "<div class='row' style='font-size:15px;'><div class='col'>Percent Change 24h: " + gdata1.percent_change_24h + " </div><div class='col' style='font-size:10px;'>" + percent_change_24h + "</div><div class='col'>Percent Change 24h: " + gdata2.percent_change_24h + "</div></div>" +
-                        "<div class='row' style='font-size:15px;'><div class='col'>Percent Change 7d: " + gdata1.percent_change_7d + " </div><div class='col' style='font-size:10px;'>" + percent_change_7d + "</div><div class='col'>Percent Change 7d: " + gdata2.percent_change_7d + "</div></div>" +
-                        "<div class='row' style='font-size:15px;'><div class='col'>Percent Change 30d: " + gdata1.percent_change_30d + " </div><div class='col' style='font-size:10px;'>" + percent_change_30d + "</div><div class='col'>Percent Change 30d: " + gdata2.percent_change_30d + "</div></div>";
+                        text_coincompare+="<div class='row' style='font-size:12px;'><div class='col'>Percent Change 1h: " + parseFloat(gdata1.percent_change_1h).toFixed(2) + "% </div><div class='col' style='font-size:10px;'>" + percent_change_1h + "</div><div class='col'>Percent Change 1h: " + parseFloat(gdata2.percent_change_1h).toFixed(2) + "%</div></div>" +
+                        "<div class='row' style='font-size:12px;'><div class='col'>Percent Change 24h: " + parseFloat(gdata1.percent_change_24h).toFixed(2) + "% </div><div class='col' style='font-size:10px;'>" + percent_change_24h + "</div><div class='col'>Percent Change 24h: " + parseFloat(gdata2.percent_change_24h).toFixed(2) + "%</div></div>" +
+                        "<div class='row' style='font-size:12px;'><div class='col'>Percent Change 7d: " + parseFloat(gdata1.percent_change_7d).toFixed(2) + "% </div><div class='col' style='font-size:10px;'>" + percent_change_7d + "</div><div class='col'>Percent Change 7d: " + parseFloat(gdata2.percent_change_7d).toFixed(2) + "%</div></div>" +
+                        "<div class='row' style='font-size:12px;'><div class='col'>Percent Change 30d: " + parseFloat(gdata1.percent_change_30d).toFixed(2) + "% </div><div class='col' style='font-size:10px;'>" + percent_change_30d + "</div><div class='col'>Percent Change 30d: " + parseFloat(gdata2.percent_change_30d).toFixed(2) + "%</div></div>";
                         if ((parseFloat(gdata1.market_cap)!=0)&&(parseFloat(gdata2.market_cap)!=0)){
-                        text_coincompare+="<div class='row' style='font-size:15px;'><div class='col'>Market Cap: " + gdata1.market_cap + " </div><div class='col' style='font-size:10px;'>" + market_cap + "</div><div class='col'>Market Cap: " + gdata2.market_cap + "</div></div>";
+                        text_coincompare+="<div class='row' style='font-size:12px;'><div class='col'>Market Cap: " + parseFloat(gdata1.market_cap).toFixed(2) + " </div><div class='col' style='font-size:10px;'>" + market_cap + "</div><div class='col'>Market Cap: " + parseFloat(gdata2.market_cap).toFixed(2) + "</div></div>";
                         }
-                        text_coincompare+="<div class='row' style='font-size:15px;'><div class='col'>Last Updated: " + gdata1.last_updated + " </div><div class='col'></div><div class='col'>Last Updated: " + gdata2.last_updated + "</div></div>";
+                        text_coincompare+="<div class='row' style='font-size:12px;'><div class='col'>Last Updated: " + gdata1.last_updated + " </div><div class='col'></div><div class='col'>Last Updated: " + gdata2.last_updated + "</div></div>";
                         
                         "</div>";
 

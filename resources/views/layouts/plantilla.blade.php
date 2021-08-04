@@ -42,7 +42,7 @@
        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </head>
     <body class="antialiased">
-    <p class="logo"><img class="logoimg" src='{{asset('storage/img/logo.png')}}' /></p>
+    <p class="logo"><img class="logoimg img-responsive text-center" src='{{asset('storage/img/logo.png')}}' /></p>
     @yield('content')    
     
         
