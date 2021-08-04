@@ -3,7 +3,7 @@
 @section('content')
 <style>
     .ui-autocomplete-loading {
-      background: white url({{asset("img/ui-anim_basic_16x16.gif")}}) 95% center no-repeat;
+      background: white url({{asset("storage/img/ui-anim_basic_16x16.gif")}}) 95% center no-repeat;
     }
 </style>
 <script type="text/javascript">
@@ -253,7 +253,7 @@ function hideLoading() {
                         text_coincompare+="<div class='row' style='font-size:15px;'><div class='col'>Percent Change 1h: " + gdata1.percent_change_1h + " </div><div class='col' style='font-size:10px;'>" + percent_change_1h + "</div><div class='col'>Percent Change 1h: " + gdata2.percent_change_1h + "</div></div>" +
                         "<div class='row' style='font-size:15px;'><div class='col'>Percent Change 24h: " + gdata1.percent_change_24h + " </div><div class='col' style='font-size:10px;'>" + percent_change_24h + "</div><div class='col'>Percent Change 24h: " + gdata2.percent_change_24h + "</div></div>" +
                         "<div class='row' style='font-size:15px;'><div class='col'>Percent Change 7d: " + gdata1.percent_change_7d + " </div><div class='col' style='font-size:10px;'>" + percent_change_7d + "</div><div class='col'>Percent Change 7d: " + gdata2.percent_change_7d + "</div></div>" +
-                        "<div class='row' style='font-size:15px;'><div class='col'>Percent Change 30d: " + gdata1.percent_change_30d + " </div><div class='col' style='font-size:10px;'>" + percent_change_30d + "</div><div class='col'>Percent Change 30d: " + gdata2.percent_change_30d + "</div></div>;
+                        "<div class='row' style='font-size:15px;'><div class='col'>Percent Change 30d: " + gdata1.percent_change_30d + " </div><div class='col' style='font-size:10px;'>" + percent_change_30d + "</div><div class='col'>Percent Change 30d: " + gdata2.percent_change_30d + "</div></div>";
                         if ((parseFloat(gdata1.market_cap)!=0)&&(parseFloat(gdata2.market_cap)!=0)){
                         text_coincompare+="<div class='row' style='font-size:15px;'><div class='col'>Market Cap: " + gdata1.market_cap + " </div><div class='col' style='font-size:10px;'>" + market_cap + "</div><div class='col'>Market Cap: " + gdata2.market_cap + "</div></div>";
                         }

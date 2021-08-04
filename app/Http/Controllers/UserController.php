@@ -38,7 +38,7 @@ class UserController extends Controller
         $remember = $request->remember;
         if (Auth::attempt($credentials,$remember)) {
             $request->session()->put('email', $request->email);
-            return redirect()->intended('coinmonitor')
+            return redirect()->intended('coincomparer')
                            ->withSuccess('Signed in');
             
         }
@@ -62,7 +62,7 @@ class UserController extends Controller
         $user->password=Hash::make($request->password);
         $user->save();
         $request->session()->put('email', $request->email);
-        return redirect()->intended('coinmonitor')
+        return redirect()->intended('coincomparer')
         ->withSuccess('Signed in');
     }
     public function logout()

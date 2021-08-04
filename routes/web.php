@@ -17,7 +17,7 @@ use App\Http\Controllers\CoinShowController;
 |
 */
 
-Route::get('/coinmonitor', IndexController::class);
+Route::get('/coincomparer', IndexController::class);
 
 Route::get('/user/create', [UserController::class, "create"])->name('user.create');
 Route::get('/', [UserController::class, "login"]);
