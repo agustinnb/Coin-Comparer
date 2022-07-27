@@ -19,6 +19,12 @@ function hideLoading() {
   document.querySelector('#loading-text').innerHTML="";
 }
 
+function hideLoading2() {
+  document.querySelector('#loading').classList.remove('loading');
+  document.querySelector('#loading-content').classList.remove('loading-content');
+  document.querySelector('#loading-text').innerHTML="";
+}
+
 </script>
 <script>
     $(document).ready(function() {
